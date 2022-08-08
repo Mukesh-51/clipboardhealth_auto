@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Suite">
+    <listeners>
+        <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Get the details of the second highest priced television of Samsung">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.ch.auto.tests.ProductDetailsTest">
+            </class>
+        </classes>
+    </test>
+</suite>
